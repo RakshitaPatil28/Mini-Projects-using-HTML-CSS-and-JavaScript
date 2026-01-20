@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <style>
+        /* Full page black background and center alignment */
+        body {
+            background:linear-gradient(135deg, #2c3e50, #34495e);
+            color: #ecf0f1;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        span{
+            color: skyblue;
+        }
+
+        .input-container {
+            position: relative;
+            width: 320px; /* total width of input + button */
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            margin: 0 auto 20px auto;
+            font-size: 16px;
+            display: block;
+        }
+
+        input[type="password"] {
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            margin: 0 auto 20px auto;
+            font-size: 16px;
+            display: block;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(92, 75, 221);
+            color: rgb(255, 249, 249);
+            font-weight: bold;
+            cursor: pointer;
+            display: block;  
+            margin: 0 auto;
+            
+            /* position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 90px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;*/
+        }
+
+        button:hover {
+            background-color: gray;
+            color: white;
+        }
+    
+        
+    </style>
+</head>
+<body>
+<h1>Form <span>Validation</span></h1>
+<form onsubmit="return validateForm()">
+  Name: <input type="text" id="name" placeholder="Enter Name"><br><br>
+  Email: <input type="text" id="email" placeholder="Enter Email-id"><br><br>
+  Password: <input type="password" id="password" placeholder="Enter Password"><br><br>
+
+  <button type="submit" value="Submit">Submit</button>
+</form>
+
+<script src="scriptFV.js"></script>
+</body>
+</html>
